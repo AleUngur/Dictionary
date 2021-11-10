@@ -22,9 +22,11 @@
       <form class="my-4">
         <div class="mb-3">
           <label for="textInput" class="form-label">Enter a word below</label>
-          <input type="textInput" class="form-control" id="textInput" />
+          <input type="textInput" class="form-control" id="wordInput" />
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary" onclick="addWord()">
+          Submit
+        </button>
       </form>
     </div>
     <div class="container my-3">
@@ -35,7 +37,9 @@
           >
           <input type="searchInput" class="form-control" id="search" />
         </div>
-        <button type="submit" class="btn btn-warning">Search</button>
+        <button type="submit" class="btn btn-warning" onclick="searchWord()">
+          Search
+        </button>
       </form>
     </div>
     <script src="script.js"></script>
