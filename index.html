@@ -18,27 +18,33 @@
   <body>
     <div class="container my-3 ml-4 mr-4">
       <h3 class="my-3">Dictionary</h3>
-      <p>Description</p>
       <form class="my-4">
         <div class="mb-3">
-          <label for="text" class="form-label">Enter a word</label>
+          <label for="text" class="form-label"
+            >Enter a word in the dictionary</label
+          >
           <input type="text" class="form-control" id="word-input" />
         </div>
         <button type="submit" class="btn btn-primary" onclick="addWord()">
-          Submit
+          Add
         </button>
       </form>
     </div>
     <div class="container my-3 ml-4 mr-4" id="myContainer">
       <form class="my-4">
         <div class="mb-3">
-          <label for="text" class="form-label">Find a word</label>
+          <label for="text" class="form-label"
+            >Find a word in the dictionary</label
+          >
           <input type="text" class="form-control" id="search-input" />
         </div>
         <button type="submit" class="btn btn-warning" onclick="searchWord()">
           Search
         </button>
       </form>
+    </div>
+    <div class="container">
+      <h4 id="message"></h4>
     </div>
     <script src="script.js"></script>
     <script
