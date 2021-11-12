@@ -17,13 +17,16 @@
   </head>
   <body>
     <div class="container my-3 ml-4 mr-4">
-      <h3 class="my-3">Dictionary</h3>
+      <h1 class="my-3">Create your dictionary</h1>
       <form class="my-4" id="submit-form">
         <div class="mb-3">
           <label for="text" class="form-label"
-            >Enter a word in the dictionary</label
+            >Enter a word you would like to add in the dictionary:</label
           >
           <input type="text" class="form-control" id="word-input" />
+          <div class="form-text">
+            You can add as many words as you like, but only one at a time.
+          </div>
         </div>
         <button type="submit" class="btn btn-primary" onclick="addWord()">
           Add
@@ -34,9 +37,14 @@
       <form class="my-4" id="search-form">
         <div class="mb-3">
           <label for="text" class="form-label"
-            >Find a word in the dictionary</label
+            >Find a word in the dictionary:</label
           >
           <input type="text" class="form-control" id="search-input" />
+
+          <div class="form-text">
+            You can find out if a specific word was already added in the
+            dictionary
+          </div>
         </div>
         <button type="submit" class="btn btn-warning" onclick="searchWord()">
           Search
@@ -44,7 +52,7 @@
       </form>
     </div>
     <div class="container" id="message-container">
-      <h4 id="message"></h4>
+      <h5 id="message" style="color: red"></h5>
     </div>
     <script src="script.js"></script>
     <script
