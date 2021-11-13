@@ -33,13 +33,3 @@ function message(isAdded) {
   }
   div.appendChild(mess);
 }
-
-//preventing the page to refresh after pushing the buttons
-/*var submitForm = document.getElementById("submit-form");
-var searchForm = document.getElementById("search-form");
-function handleForm(event) {
-  event.preventDefault();
-}
-submitForm.addEventListener("submit", handleForm);
-searchForm.addEventListener("submit", handleForm);
-*/
